@@ -8,6 +8,10 @@
           height = $self.data('height') || parseInt(width * 0.75, 10),
           selfWidth = $self.width();
 
+      if (!youtubeId) {
+        return;
+      }
+
       if (width > selfWidth) {
         width = selfWidth;
         height = parseInt(width * 0.75, 10);
